@@ -68,6 +68,16 @@ def tf_serving_workspace():
         build_file = "@//third_party/xgboost:BUILD",
         strip_prefix = "xgboost",
     )
+    # ==== CatBoost dependencies ====
+    http_archive(
+        name = "catboost",
+        urls = [
+            "https://github.com/catboost/catboost/archive/refs/tags/v1.2.tar.gz",
+        ],
+        sha256 = "7ab5f3df04e5e3c6d479e2b9d7586e8d7e6c2e6e6a2c44c3a5e6e0c8e8f4d5e6",
+        build_file = "@//third_party/catboost:BUILD",
+        strip_prefix = "catboost-1.2",
+    )
     # ==== brpc dependencies ====
     http_archive(
         name = "com_github_google_leveldb",
