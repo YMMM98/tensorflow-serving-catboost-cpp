@@ -1,4 +1,5 @@
-Below is the previous documentation for using XGboost with Tensorflow Serving. It was not Catboost compatible, documentation is still good, but we added Catboost compatibility
+Below is the previous documentation for using XGboost with Tensorflow Serving. It was not Catboost compatible, documentation is still good, but we added Catboost compatibility.
+Still need to fix some minor issues with Bazel
 
 # XGBoost Serving
 
